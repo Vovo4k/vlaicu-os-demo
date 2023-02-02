@@ -1,22 +1,55 @@
-<!DOCTYPE html>
-<html class="__DOS">
-    <head>
-        <link rel="stylesheet" href="Res/fonts/fonts.css">
-    </head>
-    <body style="text-align: center;">
-        <span style="color: white;">hmm looks here is new website</span> <br>
-        <br>
-        <br>
+<html>
+  <head>
+    <title>Build 46</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="plugs/jq-ui.css" type="text/css">
+    <script src="plugs/jq-3.5.1.js"></script>
+    <script src="plugs/jq-ui.js"></script>
+    <script src="plugs/jq-tp.js"></script>
+    <script src="code.js"></script>
+  
+  </head>
+  <body>
+    <div id="progman" class="window selectedwindow" style="position: absolute; top: 250px; left: 150px; width: 500px; height: 300px; z-index: 2">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Program Manager</div>
+      </div>
+      <div class="windowinner">
+        <div class="fullwindowicons">
+          <div class="icon" ondblclick="newWindow('#write')">
+            <img src="icdll32/write.png">
+            <p>Write</p>
+          </div>
+          <div class="icon" ondblclick="newWindow('#doom')">
+            <img src="icdll32/doom.png">
+            <p>DOOM</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        - Vlaicu Inc <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Build UNKNOWN
-    </body>
+    <div id="write" class="window" style="position: absolute; top: 150px; left: 400px; width: 500px; height: 400px; z-index: 3; display: none;">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Write - TEXTBO~1.WRI</div>
+      </div>
+      <div class="windowinner">
+        <textarea class="fullwindowtextarea">Yo what up this is a text box</textarea>
+      </div>
+    </div>
+
+
+    <div id="doom" class="window" style="position: absolute; top: 150px; left: 150px; width: 640px; height: 480px; z-index: 6; display: none">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">DOOM</div>
+      </div>
+      <div class="windowinner">
+        <canvas id="doomcanvas"></canvas>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,17 @@
+{
+  "name": "vlaicu-os",
+  "version": "8.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vlaicu Inc",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@mainsilent/linux.js": "^1.1.2",
+    "electron": "^22.2.0",
+    "electron-builder": "^22.10.3"
+  }
+}
