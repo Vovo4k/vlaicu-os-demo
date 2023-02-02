@@ -1,0 +1,55 @@
+@font-face {
+    font-family: dos;
+    src: url(DOSFont.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(progresspixel.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: pixelb;
+    src: url(progresspixel-bold.ttf);
+    font-weight: lighter;
+}
+
+html,body {
+    margin: 0;
+}
+
+html.__DOS > * {
+    font-family: 'dos';
+}
+
+html.__DOS {
+    background-color: black;
+    color: white;
+}
+
+.__dos-btn {
+    background-color: #2b2b2b;
+    font-family: 'dos';
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 4px 10px;
+    transition: 0.7s ease;
+}
+
+.__dos-btn:hover {
+    background-color: #414141;
+}
+
+.__dos-btn:active {
+    background-color: #717171;
+    transition: none;
+    transform: scale(0.9);
+    outline: none;
+}
+
+* {
+    user-select: none;
+}
